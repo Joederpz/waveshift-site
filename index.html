@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WaveShift: record your DJ set as data, rebuild it, fix it, export it</title>
+<meta name="description" content="WaveShift records what you do on your CDJs and mixer (not the audio), rebuilds the set from your own track files, and lets you fix any transition before you export a clean WAV. $79 one time.">
+<meta name="theme-color" content="#050912">
+<link rel="canonical" href="https://waveshift.live/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://waveshift.live/">
+<meta property="og:title" content="WaveShift: play it live, fix it after">
+<meta property="og:description" content="Record your DJ set as data, rebuild it from your own tracks, fix any transition and export a clean WAV.">
+<meta property="og:image" content="https://waveshift.live/assets/timeline.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="WaveShift"><span>WAVESHIFT</span></a>
+  <nav class="tabs" id="tabs">
+    <a href="#how">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#hardware">Recorder</a>
+    <a href="#gear">Gear</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm" href="#pricing" data-download>Free 14-day trial</a>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-fade"></div>
+  <div class="wrap hero-copy">
+    <p class="eyebrow reveal"><i></i> Compatible with CDJ-3000 &amp; DJM-A9</p>
+    <h1 class="reveal">Play it live.<br><span class="grad">Fix it after.</span></h1>
+    <p class="lead reveal">WaveShift records every load, cue, fader, EQ and effect you do on the decks, <b>not the audio</b>. Then it rebuilds your set from your own mastered tracks, so you can fix a transition and export a clean WAV.</p>
+    <div class="cta reveal">
+      <a class="btn btn-lg" href="#pricing" data-download>Download free trial</a>
+      <a class="btn btn-lg btn-ghost" href="#how">See how it works</a>
+    </div>
+    <p class="fine reveal">Windows 10/11 &middot; 14 days, everything unlocked &middot; <b>$79</b> one time, no subscription</p>
+  </div>
+</section>
+
+<!-- ================= PROOF STRIP ================= -->
+<section class="strip">
+  <div class="wrap strip-in">
+    <div><b>0</b><span>audio recorded, so no baked-in mistakes</span></div>
+    <div><b>100%</b><span>offline. Your sets and music never leave your PC</span></div>
+    <div><b>16/24</b><span>bit WAV export, same EQ, filter and FX maths</span></div>
+    <div><b>$0</b><span>per month. Buy it once, keep it</span></div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT SHOT ================= -->
+<section class="shot-sec">
+  <div class="wrap">
+    <h2 class="center reveal">Your whole set, as a timeline you can edit</h2>
+    <p class="sub center reveal">Every track you played, every transition as you played it, every fader move, EQ sweep and effect. Drag, trim, re-blend. Nothing is flattened into audio.</p>
+    <div class="frame reveal tilt" id="tilt">
+      <div class="frame-bar"><div class="mini-tabs"><b>CAPTURE</b><b class="on">RECONSTRUCT</b><b>MIX</b><b>EXPORT</b></div><span>SET PROJECT &nbsp;<u>WaveShift demo set</u></span></div>
+      <img src="assets/timeline.webp" width="1007" height="409" alt="The WaveShift editor timeline: four deck rows with clips, crossfades, automation lines and an effects row.">
+      <span class="glow g1"></span><span class="glow g2"></span>
+    </div>
+    <p class="cap center">A real screenshot of the editor timeline, from the built-in demo set.</p>
+  </div>
+</section>
+
+<!-- ================= HOW ================= -->
+<section class="how" id="how">
+  <div class="wrap">
+    <p class="eyebrow center reveal"><i></i> Three steps</p>
+    <h2 class="center reveal">Record. Rebuild. Export.</h2>
+    <div class="steps">
+      <article class="step reveal">
+        <span class="num">01</span>
+        <h3>Play your set</h3>
+        <p>Plug your laptop into the same switch as your CDJs and mixer and press Record. WaveShift joins Pro DJ Link and listens over USB MIDI, logging loads, tempo, playhead, faders, EQ, filters and effects. Or skip the laptop and let the <a href="#hardware">WaveShift Recorder</a> do it.</p>
+      </article>
+      <article class="step reveal">
+        <span class="num">02</span>
+        <h3>Rebuild it</h3>
+        <p>Plug the CDJ USB stick into your laptop and WaveShift finds the tracks you played, or point it at your music folder or a rekordbox XML. Your set is rebuilt from your own mastering-grade files.</p>
+      </article>
+      <article class="step reveal">
+        <span class="num">03</span>
+        <h3>Fix it and export</h3>
+        <p>Trim, move, split, re-blend. Redraw an EQ curve, swap an effect, ramp the tempo. Check the loudness, then export a 16 or 24-bit WAV ready for SoundCloud or a mix series.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features" id="features">
+  <div class="wrap">
+    <p class="eyebrow center reveal"><i></i> Built for mixes</p>
+    <h2 class="center reveal">Everything you touched, still editable</h2>
+    <div class="bento">
+      <article class="card c-wide reveal">
+        <h3>Mixer data, not a recording</h3>
+        <p>Trim, HI / MID / LOW, colour filter, channel faders, crossfader and the DJM-A9's Beat FX and Sound Color FX are all captured as automation. Move a point and the export changes with it.</p>
+        <div class="viz eq" aria-hidden="true"><svg viewBox="0 0 400 90" preserveAspectRatio="none"><path class="line l1" d="M0 60 C 50 60 70 20 120 24 S 190 70 240 50 S 330 10 400 30"/><path class="line l2" d="M0 40 C 60 70 120 70 170 40 S 280 20 400 64"/></svg></div>
+      </article>
+      <article class="card reveal">
+        <h3>Your tracks, untouched</h3>
+        <p>The audio comes from your original files, so nothing was ever squashed by the booth's hardware.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Fix any transition</h3>
+        <p>Drag clips, trim edges, right-click to split. Cue, transition in/out, blend length, crossfade, bass swap and filter-out tools.</p>
+      </article>
+      <article class="card reveal">
+        <h3>All 14 Beat FX</h3>
+        <p>Delay, Echo, Ping Pong, Spiral, Helix, Reverb, Flanger, Phaser, Filter, Trans, Roll, Mobius and more. Add, switch or delete them after the fact.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Tempo ramps &amp; sync</h3>
+        <p>Glide a track from one BPM to another, draw a tempo lane, or sync a deck to the loudest other deck.</p>
+      </article>
+      <article class="card c-wide reveal">
+        <h3>Master it before you post it</h3>
+        <p>Optional master reverb, delay and compressor, a limiter, and LUFS measured on your export so the whole set sits at a consistent level.</p>
+        <div class="viz bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </article>
+      <article class="card reveal">
+        <h3>Crash-proof capture</h3>
+        <p>The set is snapshotted every few seconds. A power cut turns into a recovered set, not a lost night.</p>
+      </article>
+      <article class="card reveal">
+        <h3>No decks? No problem</h3>
+        <p>Open it as a plain studio editor and build a set by dragging tracks in.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HARDWARE ================= -->
+<section class="hw" id="hardware">
+  <div class="wrap hw-in">
+    <div class="puck reveal" aria-label="The recorder's round touch screen cycling through its ready, recording, decks and network pages" role="img">
+      <div class="puck-screen">
+        <img src="assets/screen-ready.webp" alt="" width="480" height="480">
+        <img src="assets/screen-rec.webp" alt="" width="480" height="480">
+        <img src="assets/screen-decks.webp" alt="" width="480" height="480">
+        <img src="assets/screen-net.webp" alt="" width="480" height="480">
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow"><i></i> WaveShift Recorder</p>
+      <h2>A little box that never forgets a set</h2>
+      <p class="sub">Plug it into the DJ network switch and the mixer's USB port. Tap RECORD on its round touch screen. No laptop in the booth, nothing to crash. Tested with CDJ-3000s and a DJM-A9.</p>
+      <ul class="ticks">
+        <li>Mixer over USB, decks over Pro DJ Link on its own Ethernet port</li>
+        <li>Copy finished sets to your computer with one click, then edit them in WaveShift</li>
+        <li>Full WaveShift licence works with it, no extra subscription</li>
+      </ul>
+      <p class="cap">The screen as the firmware draws it: ready, recording, decks and network pages.</p>
+      <a class="btn btn-ghost" href="#pricing">See pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GEAR ================= -->
+<section class="gear" id="gear">
+  <div class="wrap">
+    <p class="eyebrow center reveal"><i></i> Honest compatibility</p>
+    <h2 class="center reveal">Tested on real gear. We say exactly which.</h2>
+    <div class="gear-grid">
+      <div class="gcol reveal">
+        <h3><i class="dot ok"></i> Tested</h3>
+        <ul>
+          <li><b>CDJ-3000</b> (two decks): load, play, tempo, pitch, playhead, track IDs</li>
+          <li><b>DJM-A9</b>: trim, EQ, colour filter, channel faders, crossfader, on-air flags</li>
+          <li><b>WaveShift Recorder</b>: mixer over USB, decks over Pro DJ Link, touch RECORD</li>
+          <li><b>Windows 10 / 11</b></li>
+        </ul>
+      </div>
+      <div class="gcol reveal">
+        <h3><i class="dot warn"></i> Experimental</h3>
+        <ul>
+          <li>CDJ-2000NXS2, CDJ-2000, XDJ models</li>
+          <li>DJM-900NXS2, DJM-V10 and other mixers</li>
+          <li>Run our capture kit and send us the result, we'll add your gear</li>
+        </ul>
+      </div>
+      <div class="gcol reveal">
+        <h3><i class="dot no"></i> Good to know</h3>
+        <ul>
+          <li>Beat FX and EQ are close approximations of Pioneer's, not their exact DSP</li>
+          <li>You need your own copies of the tracks you played</li>
+          <li>On the DJM-A9, light the MIDI button or it sends no faders or EQ</li>
+          <li>macOS is not supported yet</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow center reveal"><i></i> Pricing</p>
+    <h2 class="center reveal">One price. No watermark. No subscription.</h2>
+    <p class="sub center reveal">Try everything free for 14 days, then keep it for good.</p>
+    <div class="plans">
+      <article class="plan reveal">
+        <h3>Trial</h3>
+        <div class="price"><b>Free</b><span>14 days</span></div>
+        <ul>
+          <li>Every feature unlocked</li>
+          <li>Record and export during the trial</li>
+          <li>After it ends you can still open and edit your sets</li>
+        </ul>
+        <a class="btn btn-ghost btn-block" href="#" data-download>Download trial</a>
+      </article>
+      <article class="plan hot reveal">
+        <span class="badge">Own it forever</span>
+        <h3>WaveShift</h3>
+        <div class="price"><b>$<span data-price>79</span></b><span>one time</span></div>
+        <ul>
+          <li>Permanent licence, no watermark on your exports</li>
+          <li>Recording and export, forever</li>
+          <li>Works offline, one key for all your computers</li>
+        </ul>
+        <a class="btn btn-block" href="#" data-buy>Buy WaveShift</a>
+        <p class="fine">30-day refund. Price shown in USD.</p>
+      </article>
+      <article class="plan reveal">
+        <h3>Recorder box</h3>
+        <div class="price"><b>$<span data-hw-price>249</span></b><span>+ shipping</span></div>
+        <ul>
+          <li>Round touch-screen recorder, ready to plug in</li>
+          <li>Records decks and mixer without a laptop</li>
+          <li>Includes the full WaveShift licence</li>
+        </ul>
+        <a class="btn btn-ghost btn-block" href="#" data-buy-hw>Get the Recorder</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="wrap narrow">
+    <h2 class="center reveal">Straight answers</h2>
+    <details class="reveal"><summary>Does it record audio?</summary><p>No. It records control data: which track was loaded, when it played, the tempo, the faders, EQ and filter moves, and the mixer's effects. The audio is rebuilt from your own files, which is why your tracks stay mastering-grade.</p></details>
+    <details class="reveal"><summary>Will the export sound exactly like the club?</summary><p>It is a faithful rebuild, not a copy. The EQ, filter and effects are close approximations of Pioneer's, and the preview and the export use the same maths so what you hear is what you get.</p></details>
+    <details class="reveal"><summary>How does it find my tracks?</summary><p>Record with your CDJ USB stick in the decks, then plug it into your laptop and WaveShift reads the track list from it. Or give it your music folder or a rekordbox XML export.</p></details>
+    <details class="reveal"><summary>What happens when the trial ends?</summary><p>Recording and export stop until you enter a key. Opening and editing your sets keeps working, so you never lose access to them.</p></details>
+    <details class="reveal"><summary>Does it phone home?</summary><p>No. The editor is bundled and only talks to itself on your own machine. The one exception is a once-a-day check for a new version, which you can switch off in settings.</p></details>
+    <details class="reveal"><summary>Is it affiliated with Pioneer DJ / AlphaTheta?</summary><p>No. WaveShift is independent software that is compatible with their gear.</p></details>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final">
+  <div class="wrap center">
+    <h2 class="reveal">Never settle for the take you got.</h2>
+    <p class="sub reveal">Record your next set. Fix the one transition you can't stop thinking about.</p>
+    <a class="btn btn-lg reveal" href="#pricing" data-download>Download free trial</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top"><img src="assets/icon.png" alt="" width="24" height="24"><span>WAVESHIFT</span></a>
+      <nav><a href="#how">How it works</a><a href="#gear">Gear</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+    </div>
+    <p class="legal">WaveShift is independent software and is not made by or affiliated with AlphaTheta Corporation or Pioneer DJ. CDJ, DJM, rekordbox and Pro DJ Link are trademarks of their owners.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
