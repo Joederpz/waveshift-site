@@ -241,7 +241,7 @@ details p{color:var(--muted);margin:14px 0 0;max-width:640px}
 .mini-tabs b.on{background:linear-gradient(180deg,#b155ff,#7d30e8);box-shadow:0 0 12px rgba(180,77,255,.6);color:#fff}
 .frame img{border-radius:0 0 9px 9px}
 /* recorder screen cap sits under the text */
-@media(max-width:900px){.nav nav{display:none}.brand{width:60vw}.nav{min-height:72px}}
+@media(max-width:900px){.nav nav{display:none}.nav{min-height:72px}}
 .btn-sm{white-space:nowrap}
 @media(max-width:1100px){.nav,.nav.solid{background-size:auto 100%,auto 100%,auto;background-position:left top,left top,left top}.nav{background:linear-gradient(180deg,transparent 55%,var(--bg) 100%),url(assets/banner.webp) left top/auto 100% no-repeat,#050912}.nav.solid{background:linear-gradient(180deg,transparent 55%,var(--bg) 100%),url(assets/banner.webp) left top/auto 100% no-repeat,#050912}}
 .nav nav a{white-space:nowrap}
@@ -249,3 +249,17 @@ details p{color:var(--muted);margin:14px 0 0;max-width:640px}
 
 /* buttons waiting for a link */
 .btn.soon{cursor:default;opacity:.65;pointer-events:none;filter:saturate(.7)}
+
+/* ===== no sideways scroll on phones ===== */
+html,body{overflow-x:clip;max-width:100%}
+section{overflow-x:clip}
+@media(max-width:900px){
+  .nav{gap:10px;padding-left:12px;padding-right:12px}
+  .nav .btn-sm{margin-left:auto;padding:8px 12px;font-size:10.5px;letter-spacing:.08em}
+  .brand{width:min(52vw,220px)}
+  .frame-bar{padding:8px 10px;min-height:52px}
+  .frame-bar>span{display:none}
+  .mini-tabs{max-width:100%;overflow:hidden}
+  .mini-tabs b{padding:5px 9px;font-size:9.5px;letter-spacing:.06em}
+  .glow{display:none}
+}
