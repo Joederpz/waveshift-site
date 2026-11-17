@@ -10,9 +10,20 @@ const HW_PRICE = 249;      // USD + shipping (placeholder)
 
 document.querySelectorAll("[data-price]").forEach(e => e.textContent = PRICE);
 document.querySelectorAll("[data-hw-price]").forEach(e => e.textContent = HW_PRICE);
-document.querySelectorAll("[data-buy-hw]").forEach(a => { if (BUY_HW_URL) a.href = BUY_HW_URL; });
-document.querySelectorAll("[data-download]").forEach(a => { if (DOWNLOAD_URL) a.href = DOWNLOAD_URL; });
-document.querySelectorAll("[data-buy]").forEach(a => { if (BUY_URL) a.href = BUY_URL; });
+
+// A button with no link yet says "Coming soon" and does nothing.
+function wire(selector, url, soonText) {
+  document.querySelectorAll(selector).forEach(a => {
+    if (url) { a.href = url; return; }
+    a.textContent = soonText;
+    a.classList.add("soon");
+    a.setAttribute("aria-disabled", "true");
+    a.removeAttribute("href");
+  });
+}
+wire("[data-download]", DOWNLOAD_URL, "Trial coming soon");
+wire("[data-buy]", BUY_URL, "Coming soon");
+wire("[data-buy-hw]", BUY_HW_URL, "Coming soon");
 
 // nav background after scrolling
 const nav = document.getElementById("nav");

@@ -246,3 +246,6 @@ details p{color:var(--muted);margin:14px 0 0;max-width:640px}
 @media(max-width:1100px){.nav,.nav.solid{background-size:auto 100%,auto 100%,auto;background-position:left top,left top,left top}.nav{background:linear-gradient(180deg,transparent 55%,var(--bg) 100%),url(assets/banner.webp) left top/auto 100% no-repeat,#050912}.nav.solid{background:linear-gradient(180deg,transparent 55%,var(--bg) 100%),url(assets/banner.webp) left top/auto 100% no-repeat,#050912}}
 .nav nav a{white-space:nowrap}
 @media(max-width:1250px){.nav nav a{padding:9px 12px;font-size:11.5px}.nav nav a.on{padding:8px 11px}}
+
+/* buttons waiting for a link */
+.btn.soon{cursor:default;opacity:.65;pointer-events:none;filter:saturate(.7)}
