@@ -3,7 +3,8 @@
 // ---- Set these before launch ----
 const DOWNLOAD_URL = "";   // e.g. a GitHub Release link to the trial installer
 const BUY_URL = "";        // e.g. the Lemon Squeezy checkout link
-const BUY_HW_URL = "";     // Recorder box order link
+const HW_EMAIL = "orders@waveshift.live";   // Recorder requests; forwarded by Namecheap
+const BUY_HW_URL = "";     // optional: a checkout link instead of the email, once you can take payment
 const PRICE = 79;          // USD, one time
 const HW_PRICE = 249;      // USD + shipping (placeholder)
 // ---------------------------------
@@ -23,7 +24,9 @@ function wire(selector, url, soonText) {
 }
 wire("[data-download]", DOWNLOAD_URL, "Trial coming soon");
 wire("[data-buy]", BUY_URL, "Coming soon");
-wire("[data-buy-hw]", BUY_HW_URL, "Coming soon");
+// The Recorder is a physical product, so for now the button opens an email. A checkout link, if set, wins.
+wire("[data-buy-hw]", BUY_HW_URL || (HW_EMAIL && "mailto:" + HW_EMAIL + "?subject=" + encodeURIComponent("WaveShift Recorder")), "Coming soon");
+if (!BUY_HW_URL && HW_EMAIL) document.querySelectorAll("[data-buy-hw]").forEach(a => { a.textContent = "Request the Recorder"; });
 
 // nav background after scrolling
 const nav = document.getElementById("nav");
