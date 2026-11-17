@@ -263,3 +263,5 @@ section{overflow-x:clip}
   .mini-tabs b{padding:5px 9px;font-size:9.5px;letter-spacing:.06em}
   .glow{display:none}
 }
+html{overscroll-behavior-x:none}
+@media(max-width:900px){.plans{grid-template-columns:minmax(0,1fr)}.step,.card,.gcol,.plan{min-width:0}}
